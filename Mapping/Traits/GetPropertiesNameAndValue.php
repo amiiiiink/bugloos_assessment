@@ -3,6 +3,7 @@
 namespace Mapping\Traits;
 
 use Doctrine\Common\Annotations\AnnotationReader;
+use ReflectionException;
 use Symfony\Component\PropertyAccess\PropertyAccess;
 use Symfony\Component\PropertyAccess\PropertyAccessor;
 
@@ -16,6 +17,7 @@ trait GetPropertiesNameAndValue
         $this->propertyAccessor = PropertyAccess::createPropertyAccessor();
         $this->annotationReader = $annotationReader;
     }
+
     /**
      * @param $property
      * @param array $result
