@@ -26,14 +26,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $active_api =config()->get("settings");
 
-        app()->singleton(EntityInterface::class, function () use ($active_api) {
-            return new $active_api["entity_name"];
-        });
-
-        app()->singleton(DataMapperInterface::class, function () use ($active_api) {
-            return new $active_api["data_mapper"];
-        });
     }
 }

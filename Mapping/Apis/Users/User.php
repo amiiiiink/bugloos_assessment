@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Apis\Users;
+namespace Mapping\Apis\Users;
 
 
-use App\Apis\Users\Interfaces\EntityInterface;
-use App\Apis\Users\UserDataMapper;
+
+use Mapping\Interfaces\EntityInterface;
 
 class User implements EntityInterface
 {
@@ -31,14 +31,11 @@ class User implements EntityInterface
      * @var
      * @UserDataMapper(json_field="bio")
      */
-//    protected $bio;
-//    protected $username;
-//    protected $fullname;
-//    protected $bio;
+
     /**
-     * @return mixed
+     * @return string
      */
-    public function getUsername()
+    public function getUsername(): string
     {
         return $this->username;
     }
@@ -48,7 +45,7 @@ class User implements EntityInterface
      *
      * @return User
      */
-    public function setUsername($username)
+    public function setUsername(mixed $username): static
     {
         $this->username = $username;
 
@@ -56,9 +53,9 @@ class User implements EntityInterface
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getFullname()
+    public function getFullname(): string
     {
         return $this->fullname;
     }
@@ -68,7 +65,7 @@ class User implements EntityInterface
      *
      * @return User
      */
-    public function setFullname($fullname)
+    public function setFullname(mixed $fullname): static
     {
         $this->fullname = $fullname;
 
@@ -78,7 +75,7 @@ class User implements EntityInterface
     /**
      * @return UserInfo
      */
-    public function getInfo()
+    public function getInfo(): UserInfo
     {
         return $this->info;
     }
@@ -88,7 +85,7 @@ class User implements EntityInterface
      *
      * @return User
      */
-    public function setInfo($info)
+    public function setInfo($info): static
     {
         $this->info = $info;
 

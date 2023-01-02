@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Apis\Users;
 
-use App\Apis\Users\Interfaces\EntityInterface;
+namespace Mapping\Apis\Users;
+
+
+use Mapping\Interfaces\EntityInterface;
 
 class UserInfo implements EntityInterface
 {

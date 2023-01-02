@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Apis\Users;
+namespace Mapping\Apis\Users;
 
 
-use App\Apis\Users\Interfaces\DataMapperInterface;
-use Doctrine\Common\Annotations\Annotation;
+
+use Mapping\Interfaces\DataMapperInterface;
 
 /**
  * Class DataMapper.

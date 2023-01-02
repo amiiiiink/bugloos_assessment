@@ -1,7 +1,8 @@
 <?php
-namespace App\Apis\Users;
+namespace Mapping\Apis\Users;
 
-use App\Apis\Users\Interfaces\DataMapperInterface;
+
+use Mapping\Interfaces\DataMapperInterface;
 
 /**
  * Class DataMapper.
@@ -13,4 +14,3 @@ class UserDataMapper implements DataMapperInterface
 {
     public $json_field;
 }
-

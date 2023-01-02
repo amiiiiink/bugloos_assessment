@@ -1,7 +1,5 @@
 <?php
-
-namespace App\Apis\Users\Interfaces;
-
+namespace Mapping\Interfaces;
 interface DataMapperInterface
 {
 

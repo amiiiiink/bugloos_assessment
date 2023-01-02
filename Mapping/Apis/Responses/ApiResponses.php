@@ -1,10 +1,6 @@
 <?php
 
-
-namespace App\Http;
-
-
-use Illuminate\Support\Facades\Http;
+namespace Mapping\Apis\Responses;
 
 class ApiResponses
 {
