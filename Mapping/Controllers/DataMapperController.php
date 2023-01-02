@@ -9,6 +9,7 @@ use JetBrains\PhpStorm\NoReturn;
 use Mapping\Apis\Responses\ApiResponses;
 use Mapping\Interfaces\EntityInterface;
 use Mapping\Traits\DataMapper;
+use Mtownsend\XmlToArray\XmlToArray;
 
 class DataMapperController extends Controller
 {
@@ -21,12 +22,15 @@ class DataMapperController extends Controller
      */
     #[NoReturn] public function __invoke(ApiResponses $apiResponses, EntityInterface $entity): void
     {
-        $data = $apiResponses->getData();
+
+//        $file = 'api.json';
+        $file = 'api.xml';
+        $data = $apiResponses->getData($file);
         try {
             $result = $this->startMapping($data, $entity);
 
             echo 'API Input';
-            dump($apiResponses->getData());
+            dump($apiResponses->getData($file));
             echo 'Mapping Result';
             dd($result);
 
