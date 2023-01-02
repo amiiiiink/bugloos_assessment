@@ -24,6 +24,10 @@ I made a Mapping Module and bind it to laravel and made each directories separat
 Try to make Single responsible each trait and class
 and used __invoke on my route
 
+# Version 4
+
+I added strategy design pattern to be able to support xml data
+
 
 
 
