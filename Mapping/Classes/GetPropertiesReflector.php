@@ -8,6 +8,7 @@ class GetPropertiesReflector
 {
 
     /**
+     * This Class Is Just To get Properties of class by reflection
      * @param $entity
      * @return ReflectionProperty[]
      * @throws ReflectionException

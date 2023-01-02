@@ -8,8 +8,6 @@ use ReflectionException;
 
 trait MapProperties
 {
-
-
     /**
      * @param EntityInterface $entity
      * @param mixed $data

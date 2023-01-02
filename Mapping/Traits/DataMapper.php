@@ -1,7 +1,6 @@
 <?php
 namespace Mapping\Traits;
 
-
 use Mapping\Interfaces\EntityInterface;
 use ReflectionException;
 

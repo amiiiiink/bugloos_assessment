@@ -12,18 +12,18 @@ class UserInfo implements EntityInterface
      * @var
      * @UserInfoDataMapper(json_field="address")
      */
-    protected $address;
+    protected mixed $address;
 
     /**
      * @var
      * @UserInfoDataMapper(json_field="tel")
      */
-    protected $telephone;
+    protected mixed $telephone;
 
     /**
      * @return mixed
      */
-    public function getAddress()
+    public function getAddress(): mixed
     {
         return $this->address;
     }
@@ -31,7 +31,7 @@ class UserInfo implements EntityInterface
     /**
      * @param mixed $address
      */
-    public function setAddress($address)
+    public function setAddress(mixed $address): static
     {
         $this->address = $address;
         return $this;
@@ -41,7 +41,7 @@ class UserInfo implements EntityInterface
     /**
      * @return mixed
      */
-    public function getTelephone()
+    public function getTelephone(): mixed
     {
         return $this->telephone;
     }
@@ -49,7 +49,7 @@ class UserInfo implements EntityInterface
     /**
      * @param mixed $telephone
      */
-    public function setTelephone($telephone)
+    public function setTelephone(mixed $telephone): static
     {
         $this->telephone = $telephone;
         return $this;

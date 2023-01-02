@@ -85,7 +85,7 @@ class User implements EntityInterface
      *
      * @return User
      */
-    public function setInfo($info): static
+    public function setInfo(UserInfo $info): static
     {
         $this->info = $info;
 
