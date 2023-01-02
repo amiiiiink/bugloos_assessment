@@ -17,6 +17,13 @@ I have DataMapperController that have index method which we can see the input of
 class App\Http\ApiResponses is the input simulation
 Trait App\Traits\DataMapper is using Annotation and reflection packages to map data into our database fields
 
+# Version 3
+
+I made a Mapping Module and bind it to laravel and made each directories separate
+
+Try to make Single responsible each trait and class
+and used __invoke on my route
+
 
 
 
